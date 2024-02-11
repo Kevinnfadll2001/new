@@ -135,7 +135,15 @@
 <div class="footer">
     <p>&copy;Get Nailed</p>
     <p>Contact us: rachamazbouh0@gmail.com</p>
-    <a class="whatsapp-button" href="https://wa.me/70803566" target="_blank">Book Now</a>
+    <button class="whatsapp-button" onclick="goToChat()">Book Now</button>
+    <script>
+        function goToChat() {
+            // Open WhatsApp chat link
+            window.open("https://wa.me/70803566", "_blank");
+            
+            // Display a confirmation message or paragraph
+        }
+    </script>
 </div>
 
 </body>
