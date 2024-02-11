@@ -118,6 +118,20 @@
     <p>&copy;Get Nailed</p>
     <p>Contact us:rachamazbouh0@gmail.com</p>
     <p>whatsapp:70803566</p>
+    <button onclick="openWhatsApp()">Start WhatsApp Chat</button>
+
+    <script>
+        function openWhatsApp() {
+            // Replace "71719056" with the phone number you want to chat with
+            var phoneNumber = "71719056";
+            
+            // Construct the WhatsApp URL
+            var url = "https://wa.me/" + phoneNumber;
+
+            // Open the WhatsApp chat in a new window
+            window.open(url, "_blank");
+        }
+    </script>
 </div>
 </body>
 </html>
