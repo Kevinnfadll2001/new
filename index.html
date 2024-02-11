@@ -62,6 +62,24 @@
         .footer p {
             margin: 0;
         }
+        .whatsapp-button {
+            background-color: #25D366; /* WhatsApp green */
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Change button background color on hover */
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Darker WhatsApp green */
+        }
 </style>
 </head>
 <body>
@@ -116,22 +134,9 @@
 
 <div class="footer">
     <p>&copy;Get Nailed</p>
-    <p>Contact us:rachamazbouh0@gmail.com</p>
-    <p>whatsapp:70803566</p>
-    <button onclick="openWhatsApp()">Start WhatsApp Chat</button>
-
-    <script>
-        function openWhatsApp() {
-            // Replace "71719056" with the phone number you want to chat with
-            var phoneNumber = "71719056";
-            
-            // Construct the WhatsApp URL
-            var url = "https://wa.me/" + phoneNumber;
-
-            // Open the WhatsApp chat in a new window
-            window.open(url, "_blank");
-        }
-    </script>
+    <p>Contact us: rachamazbouh0@gmail.com</p>
+    <a class="whatsapp-button" href="https://wa.me/70803566" target="_blank">Book Now</a>
 </div>
+
 </body>
 </html>
