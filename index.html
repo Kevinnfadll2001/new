@@ -58,7 +58,23 @@
             color: #fff; /* White text color */
             padding: 20px;
             text-align: center;
+            
         }
+        footer {
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;/*Center items horizontally */
+}
+
+.footer-content img {
+    width: 100px; /* Adjust the width of the QR code */
+}
         .footer p {
             margin: 0;
         }
@@ -80,6 +96,7 @@
         .whatsapp-button:hover {
             background-color: #128C7E; /* Darker WhatsApp green */
         }
+        
 </style>
 </head>
 <body>
@@ -135,6 +152,8 @@
 <div class="footer">
     <p>&copy;Get Nailed</p>
     <p>Contact us: rachamazbouh0@gmail.com</p>
+    <div class="footer-content">
+        <img src="Screenshot 2024-02-12 234012.png" alt="QR code">
     <button class="whatsapp-button" onclick="goToChat()">Book Now</button>
     <script>
         function goToChat() {
