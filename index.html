@@ -5,186 +5,203 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nail Care Salon</title>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
 
-.fixed-image {
+    .fixed-image {
         position: fixed;
-        top: 0; 
-        left:0; 
-        width:100vw;
-        height:100vh;
-        z-index:-1;}
-    
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
     header {
-        background-color: white; /* Light coral header background color */
+        background-color: white;
         padding: 20px;
         text-align: center;
     }
+
     h1 {
         margin: 0;
     }
+
     section {
         padding: 20px;
-        background-color: rgb(237, 237, 218); /* White section background color */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-        margin: 20px auto; /* Center the section */
-        max-width: 600px; /* Limit width for better readability */
+        background-color: rgb(237, 237, 218);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 700px;
     }
+
     .service {
-        margin-bottom: 20px; /* Space between services */
+        margin-bottom: 20px;
         padding: 10px;
-        border: 1px solid rgb(212, 212, 131); /* Gray border */
-        border-radius: 5px; /* Rounded corners */
+        border: 1px solid rgb(212, 212, 131);
+        border-radius: 5px;
+        background-color: white;
     }
-    .service1{
-        margin-bottom: 20px; /* Space between services */
+
+    .service1 {
+        margin-bottom: 20px;
         padding: 10px;
-        border: 1px solid rgb(220, 220, 69); /* Gray border */
-        border-radius: 5px; /* Rounded corners */
+        border: 1px solid rgb(220, 220, 69);
+        border-radius: 5px;
+        background-color: white;
     }
-    .service2{
-        margin-bottom: 20px; /* Space between services */
+
+    .service2 {
+        margin-bottom: 20px;
         padding: 10px;
-        border: 1px solid yellow; /* Gray border */
-        border-radius: 5px; /* Rounded corners */
+        border: 1px solid yellow;
+        border-radius: 5px;
+        background-color: white;
     }
-    body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        .footer {
-            background-color: white; /* Pink background color */
-            color: black; /* White text color */
-            padding: 20px;
-            text-align: center;
-            
-        }
-        footer {
-    background-color: #333; /* Example background color */
-    color: #fff; /* Example text color */
-    padding: 20px;
-}
 
-.footer-content {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center;/*Center items horizontally */
-}
-.footer-content p {
-    margin-right: 100%; /* Add spacing between text and image */
-}
+    .nail-care-columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-.footer-content img {
-    width: 100px; /* Adjust the width of the QR code */
-    margin-right: 3%;
-}
-        .footer p {
-            margin: 0;
-        }
-        .whatsapp-button {
-            background-color:yellow; /* WhatsApp green */
-            border: none;
-            color: black;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    .column {
+        flex: 1;
+        min-width: 200px;
+    }
 
-        /* Change button background color on hover */
-        .whatsapp-button:hover {
-            background-color: yellow /* Darker WhatsApp green */
-        }
-        .price-list {
-  display: flex;
-  flex-direction: column; /* Display items vertically */
-}
+    .footer {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
 
-.item {
-  display: flex;
-  justify-content: space-between; /* Space between item name and price */
-  margin-bottom: 10px; /* Add vertical spacing between items */
-}
-.img {
-            width:10px; /* Adjust image width as needed */
-            height:10px; /* Maintain aspect ratio */
-            margin-right: 50px; /* Add space between image and title */
-        }
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content p {
+        margin-right: 100%;
+    }
+
+    .footer-content img {
+        width: 100px;
+        margin-right: 3%;
+    }
+
+    .whatsapp-button {
+        background-color: yellow;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+        background-color: yellow;
+    }
+
+    .img {
+        width: 10px;
+        height: 10px;
+        margin-right: 50px;
+    }
 </style>
 </head>
 <body>
 
 <header>
-    <img src="new logo.png" alt="Logo" width="300px" >
+    <img src="new logo.png" alt="Logo" width="300px">
 </header>
 
 <section>
-    <div class="service" style="background-color: white;"> <!-- Light pink service background color -->
+    <div class="service">
         <h2>Nail Care</h2>
-        <p>Pose Mains:3$</p>
-        <p>Manicure sans pose:5$</p>
-        <p>Mani+pose:6$</p>
-       <p> Mani,Scrub+Massage:10$</p>
-       <p>French:4$</p>
-       <p>Fake Nails:8$</p>
+        <div class="nail-care-columns">
+            <!-- Column 1 -->
+            <div class="column">
+                <p>Pose normal polish (fingers or toes): 5$</p>
+                <br>
+                <p>Russian manicure: 10$</p>
+                <p>Russian pedicure: 15$</p>
+                <br>
+                <p>Classic manicure: 7$</p>
+                <p>Classic mani + nail polish: 10$</p>
+                <br>
+                <p>Classic pedicure: 8$</p>
+                <p>Classic pedi + nail polish: 12$</p>
+                <BR>
+                <p>French: +3$</p>
+                <p>Broken nail: +1$</p>
+                <p>Scrub + Massage: +4$</p>
+                <br>
+                <p>Parrafine: 8$</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="column">
+                <p>Russian manicure + gel color: 17$</p>
+                <p>Russian pedicure + gel color: 20$</p>
+                <br>
+                <p>Rubber base: +7$</p>
+                <p>Gel color removal: 5$</p>
+                <br>
+                <p>Gel french: +5$</p>
+                <p>Cat eye: +4$</p>
+                <br>
+                <p>Full set builder gel + gel color: 50$</p>
+                <p>Refill builder gel + gel color: 25$</p>
+            </div>
+        </div>
     </div>
 
-    <div class="service" style="background-color:white;"> <!-- Light salmon service background color -->
-        <h2>Pedicure</h2>
-        <p>Pose Pieds:4$</p>
-        <p>Pedicure sans pose:6$</p>
-        <p>Pedi+Pose:8$</p>
-        <p>Pedi,Scrub+massage:12$</p>
-        <p>French:4$</p>
-    </div>
-
-    <div class="service" style="background-color: white;"> <!-- Light coral service background color -->
-        <h2>Gelish</h2>
-        <p>Gel color+Mani=12$</p>
-        <p>Gel color+Pedi=12$</p>
-        <p>Gel color french=14$</p>
-        <p>Removal:4$</p>
-
-    </div>
-    <div class="service1" style="background-color: white;"> <!-- Light coral service background color -->
+    <div class="service1">
         <h2>Face</h2>
-        <p>Eyebrows:2$</p>
-        <p>Moustache:1$</p>
+        <p>Eyebrows: 3$</p>
+        <p>Moustache: 1$</p>
     </div>
-    <div class="service2" style="background-color: white;"> <!-- Light coral service background color -->
 
-        <h2>Wax</h2>
-        <p>Full Arms:6$</p>
-        <p>Half Arms:4$</p>
-        <p>Full Legs:12$</p>
-        <p>Half Legs:6$</p>
-        <p>Belly:6$</p>
-        <p>Back:6$</p>
-        <p>Underarms:3$</p>
+    <div class="service2">
+        <h2>Waxing</h2>
+        <p>Full Arms: 10$</p>
+        <p>Half Arms: 5$</p>
+        <p>Full Legs: 15$</p>
+        <p>Half Legs: 10$</p>
+        <p>Belly: 6$</p>
+        <p>Back: 6$</p>
+        <p>Underarms: 5$</p>
+        <p>Bikini line: 4$</p>
+        <p>Full bikini: 8$</p>
     </div>
-    
 </section>
 
 <div class="footer">
-    <p>&copy;Bee</p>
+    <p>&copy; Bee</p>
     <p>Contact us: rachamazbouh0@gmail.com</p>
     <div class="footer-content">
         <img src="insta.png" alt="QR code">
-    <button class="whatsapp-button" onclick="goToChat()">Book Now</button>
-    <script>
-        function goToChat() {
-            // Open WhatsApp chat link
-            window.open("https://wa.me/81250418", "_blank");
-            
-            // Display a confirmation message or paragraph
-        }
-    </script>
+        <button class="whatsapp-button" onclick="goToChat()">Book Now</button>
+    </div>
 </div>
+
+<script>
+    function goToChat() {
+        window.open("https://wa.me/81250418", "_blank");
+    }
+</script>
 
 </body>
 </html>
